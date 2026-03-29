@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuvind | Portfolio</title>
+    <meta name="description" content="Portfolio website of Anuvind, featuring interactive animations and projects.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particle-container"></div>
+    
+    <nav class="navbar">
+        <div class="logo">A.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span><br>
+                <div style="overflow: hidden;"><span class="name">Anuvind</span></div>
+            </h1>
+            <p class="hero-subtitle">Creating engaging digital experiences.</p>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container section-reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
+                    I am a passionate creator focused on building beautiful, highly interactive web experiences. 
+                    I love blending design and technology to bring ideas to life with stunning animations and solid performance.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container section-reveal">
+                <h2 class="section-title">Featured Work</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #1f1c2c, #928DAB)"></div>
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>An interactive data visualization tool with real-time updates.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364)"></div>
+                        <div class="project-info">
+                            <h3>Project Beta</h3>
+                            <p>E-commerce platform featuring immersive 3D product previews.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #c31432, #240b36)"></div>
+                        <div class="project-info">
+                            <h3>Project Gamma</h3>
+                            <p>Award-winning minimalist portfolio template.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container section-reveal">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-text">Follow my journey and check out my latest posts!</p>
+                <div class="social-card">
+                    <div class="social-header">
+                        <div class="avatar">A</div>
+                        <div class="handle-info">
+                            <span class="real-name">Anuvind</span>
+                            <a href="https://instagram.com/anuvind_olv" target="_blank" class="handle">@anuvind_olv</a>
+                        </div>
+                        <a href="https://instagram.com/anuvind_olv" target="_blank" class="follow-btn">Follow</a>
+                    </div>
+                    <div class="social-stats">
+                        <div class="stat"><span class="stat-num">42</span> Posts</div>
+                        <div class="stat"><span class="stat-num">1.2K</span> Followers</div>
+                        <div class="stat"><span class="stat-num">300</span> Following</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
